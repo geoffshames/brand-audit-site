@@ -15,7 +15,7 @@ const auditData: AuditData = {
     brandName: "Liza Soberano",
     accentColor: "#D4A0A0",
     context:
-      "Full 360° brand audit covering Liza Soberano's personal brand, acting career, social presence, endorsements, production company, and Hollywood transition.",
+      "Full 360° brand audit covering Liza Soberano's personal brand, acting career, social presence, endorsements, and Hollywood transition.",
   },
   discovery: {
     websiteUrl: "https://www.imdb.com/name/nm4715046/",
@@ -30,7 +30,7 @@ const auditData: AuditData = {
         "https://www.facebook.com/LizaElizabethSoberanoOfficial/",
     },
     description:
-      "Filipino-American actress, producer, and brand ambassador transitioning from Philippine entertainment royalty to Hollywood, with a production company (SoberanOH) and 18M+ Instagram following.",
+      "Filipino-American actress, producer, and brand ambassador transitioning from Philippine entertainment royalty to Hollywood, with 18M+ Instagram following and growing production ambitions.",
   },
   brandSnapshot: {
     positioning:
@@ -54,7 +54,7 @@ const auditData: AuditData = {
       {
         adjective: "Entrepreneurial",
         evidence:
-          "Founded SoberanOH production company with 7 projects in development, seeking local investors while leveraging Hollywood connections — signaling a shift from talent to mogul.",
+          "Actively developing production ventures with multiple projects in the pipeline, leveraging Hollywood connections and seeking investors — signaling a shift from talent to mogul.",
       },
     ],
     visualIdentity:
@@ -63,7 +63,7 @@ const auditData: AuditData = {
       "Acting — Film & Television (Hollywood + Philippine markets)",
       "Voice Acting — Netflix (Trese) and DreamWorks (Forgotten Island)",
       "Brand Ambassadorship — BYS Cosmetics, Dior, Deoproce, Maya, Bench",
-      "Production — SoberanOH Productions (7 projects in development)",
+      "Production — Multiple projects in development across film and TV",
       "Advocacy — Mental health, gender equality, Filipino representation",
     ],
     digitalPresenceScore: "strong",
@@ -90,7 +90,7 @@ const auditData: AuditData = {
       {
         title: "No Owned Digital Hub",
         detail:
-          "Liza has no personal website — her brand story is fragmented across Instagram, TikTok, IMDB, and press articles. A personal site (lizasoberano.com) would serve as the central node for press kits, SoberanOH announcements, brand partnerships, and narrative control. Every major Hollywood talent has one.",
+          "Liza has no personal website — her brand story is fragmented across Instagram, TikTok, IMDB, and press articles. A personal site (lizasoberano.com) would serve as the central node for press kits, project announcements, brand partnerships, and narrative control. Every major Hollywood talent has one.",
       },
       {
         title: "Inconsistent Content Cadence & Platform Strategy",
@@ -98,9 +98,9 @@ const auditData: AuditData = {
           "Her TikTok (7.2M followers) is underutilized compared to the 60-70% Reels-first strategy that dominates in 2026. Content posting is sporadic rather than following a deliberate editorial calendar. The YouTube channel lacks consistent programming. There's no email list or newsletter capturing her most engaged fans.",
       },
       {
-        title: "SoberanOH Has Zero Brand Presence",
+        title: "Production Ventures Lack Public Brand Presence",
         detail:
-          "Despite having 7 projects in development and actively seeking investors, SoberanOH has no website, no social media presence, no press page, and no visual identity. For a production company courting investors, this is a critical gap that undermines credibility and deal flow.",
+          "Liza's production ambitions are well-documented in press interviews, but there's no dedicated public-facing brand presence for her production work — no website, no social accounts, no project slate page. As she develops projects, a visible production brand would strengthen credibility with co-producers and collaborators.",
       },
     ],
   },
@@ -118,7 +118,7 @@ const auditData: AuditData = {
         keyWeakness:
           "Primarily a fashion/lifestyle influencer rather than an actress with range — limited Hollywood crossover ambitions and no production company or storytelling enterprise.",
         exploitableGap:
-          "Liza can own the actress-producer-mogul lane that Heart doesn't occupy. While Heart dominates fashion week front rows, Liza can dominate screen credits, production slates, and narrative-driven brand partnerships.",
+          "Liza can own the actress-producer lane that Heart doesn't occupy. While Heart dominates fashion week front rows, Liza can dominate screen credits, production slates, and narrative-driven brand partnerships.",
       },
       {
         name: "Nadine Lustre",
@@ -146,7 +146,7 @@ const auditData: AuditData = {
         keyWeakness:
           "Minimal social media presence (52K Instagram followers) and no personal brand infrastructure. Appeals to the art-house audience but lacks mainstream reach.",
         exploitableGap:
-          "Liza occupies the mainstream commercial lane that Dolly doesn't. Where Dolly attracts prestige projects, Liza can attract tentpole franchises, commercial endorsements, and mass-market partnerships — while building toward prestige through SoberanOH.",
+          "Liza occupies the mainstream commercial lane that Dolly doesn't. Where Dolly attracts prestige projects, Liza can attract tentpole franchises, commercial endorsements, and mass-market partnerships — while building toward prestige through her own production work.",
       },
       {
         name: "Bretman Rock",
@@ -164,7 +164,7 @@ const auditData: AuditData = {
       },
     ],
     landscapeSummary:
-      "The Filipino global entertainment crossover space is heating up rapidly. Heart Evangelista dominates luxury fashion, Bretman Rock owns digital culture, Dolly de Leon holds prestige acting, and Nadine Lustre embodies indie entrepreneurship. Liza Soberano occupies a unique intersection: she has the massive social following (18M), the Hollywood momentum (DreamWorks, Lisa Frankenstein), the production company ambitions, and the advocacy credibility. No one else in this landscape combines all four — making her brand positioning exceptionally strong if properly activated.",
+      "The Filipino global entertainment crossover space is heating up rapidly. Heart Evangelista dominates luxury fashion, Bretman Rock owns digital culture, Dolly de Leon holds prestige acting, and Nadine Lustre embodies indie entrepreneurship. Liza Soberano occupies a unique intersection: she has the massive social following (18M), the Hollywood momentum (DreamWorks, Lisa Frankenstein), growing production ambitions, and the advocacy credibility. No one else in this landscape combines all four — making her brand positioning exceptionally strong if properly activated.",
     marketCrowdedness: "moderate",
   },
   audienceProfile: {
@@ -230,14 +230,14 @@ const auditData: AuditData = {
     {
       title: "Launch LizaSoberano.com as the Central Brand Hub",
       reasoning:
-        "Every major Hollywood talent has a personal site. Liza's brand narrative is currently scattered across social platforms, IMDB, and press articles she doesn't control. A personal site becomes the canonical source for her press kit, SoberanOH portfolio, brand partnership inquiries, and a direct-to-fan newsletter — the one channel no algorithm can throttle.",
+        "Every major Hollywood talent has a personal site. Liza's brand narrative is currently scattered across social platforms, IMDB, and press articles she doesn't control. A personal site becomes the canonical source for her press kit, project portfolio, brand partnership inquiries, and a direct-to-fan newsletter — the one channel no algorithm can throttle.",
       impact: "high",
       effort: "medium",
     },
     {
-      title: "Build SoberanOH Into a Visible Brand",
+      title: "Formalize Production Brand Identity",
       reasoning:
-        "With 7 projects in development and active investor outreach, SoberanOH needs a professional brand presence immediately. A dedicated site with project slate, team bios, and mission statement transforms it from a side venture into a legitimate production company that investors and co-producers take seriously.",
+        "Liza's production ambitions are growing — but there's no public-facing brand for this side of her career. A dedicated production brand presence with a project slate, mission, and team page would legitimize this lane and attract co-production partners, collaborators, and industry attention.",
       impact: "high",
       effort: "medium",
     },
@@ -251,7 +251,7 @@ const auditData: AuditData = {
     {
       title: "Position as the Defining Filipina Voice in Hollywood",
       reasoning:
-        "The Filipino cultural export moment is now — BINI is charting globally, Heart Evangelista dominates Fashion Week, and Hollywood is actively seeking diverse talent. Liza's DreamWorks role + Patron Saints of Nothing + SoberanOH create a narrative of 'the Filipina reshaping Hollywood from both sides of the camera.' Own this narrative with intentional PR and thought leadership.",
+        "The Filipino cultural export moment is now — BINI is charting globally, Heart Evangelista dominates Fashion Week, and Hollywood is actively seeking diverse talent. Liza's DreamWorks role + Patron Saints of Nothing + her production work create a narrative of 'the Filipina reshaping Hollywood from both sides of the camera.' Own this narrative with intentional PR and thought leadership.",
       impact: "high",
       effort: "low",
     },
@@ -267,7 +267,7 @@ const auditData: AuditData = {
     {
       title: "Build & Launch LizaSoberano.com",
       description:
-        "Create a premium personal brand website that serves as the central hub for Liza's career, advocacy, press kit, and brand partnership pipeline. Include sections for acting work, SoberanOH productions, brand collaborations, and a newsletter signup.",
+        "Create a premium personal brand website that serves as the central hub for Liza's career, advocacy, press kit, and brand partnership pipeline. Include sections for acting work, production projects, brand collaborations, and a newsletter signup.",
       actionItems: [
         "Design and develop a dark-themed, editorial-style personal website",
         "Include a comprehensive press kit with hi-res photos, bio, and contact info for managers/agents",
@@ -278,14 +278,14 @@ const auditData: AuditData = {
       category: "web",
     },
     {
-      title: "Create SoberanOH Brand Identity & Website",
+      title: "Establish Production Brand Identity & Web Presence",
       description:
-        "Give SoberanOH Productions a professional brand presence with its own visual identity, website, and social media accounts. This is critical for investor confidence and co-production deal flow.",
+        "Give Liza's production ventures a professional brand presence with a visual identity, dedicated website, and social accounts. This is critical for co-production credibility and industry deal flow.",
       actionItems: [
-        "Design a logo and visual identity system for SoberanOH",
-        "Launch soberanoh.com with project slate, mission, and investor inquiries",
-        "Create SoberanOH Instagram and LinkedIn accounts",
-        "Develop a one-sheet deck for investor meetings",
+        "Develop a logo and visual identity system for her production brand",
+        "Launch a production-focused website with project slate, mission, and contact info",
+        "Create dedicated production social media accounts (Instagram + LinkedIn)",
+        "Develop a one-sheet deck for industry meetings and collaborations",
       ],
       timeline: "30-60 days",
       category: "brand",
@@ -398,11 +398,11 @@ const auditData: AuditData = {
       timeframe: "12 months",
     },
     {
-      metric: "SoberanOH Brand Visibility Score",
-      currentEstimate: "Near zero (no online presence)",
+      metric: "Production Brand Visibility",
+      currentEstimate: "No dedicated online presence",
       target: "Established web presence + 10K social followers",
       benchmark:
-        "New production companies from talent with Liza's profile typically reach 10-25K followers within first year with proper launch strategy.",
+        "New production brands from talent with Liza's profile typically reach 10-25K followers within first year with proper launch strategy.",
       timeframe: "6 months",
     },
   ],
@@ -411,12 +411,12 @@ const auditData: AuditData = {
       phase: "Phase 1",
       title: "Foundation & Digital Infrastructure",
       description:
-        "Build the foundational digital assets that Liza currently lacks — personal website, newsletter platform, and SoberanOH brand identity. This phase creates the infrastructure everything else builds upon.",
+        "Build the foundational digital assets that Liza currently lacks — personal website, newsletter platform, and production brand identity. This phase creates the infrastructure everything else builds upon.",
       deliverables: [
         "LizaSoberano.com design and development",
         "Newsletter platform setup (Klaviyo/Substack)",
-        "SoberanOH logo and visual identity",
-        "SoberanOH.com website",
+        "Production brand logo and visual identity",
+        "Production brand website",
         "Google Knowledge Panel optimization",
       ],
       duration: "Weeks 1-4",
@@ -457,7 +457,7 @@ const auditData: AuditData = {
       deliverables: [
         "Comprehensive performance report with KPI tracking",
         "Brand partnership framework and prospect list",
-        "SoberanOH investor one-sheet and pitch materials",
+        "Production brand investor one-sheet and pitch materials",
         "Long-term content strategy (12-month plan)",
         "Annual brand audit refresh",
       ],
