@@ -21,8 +21,8 @@ export default function SectionWrapper({
   const ref = useRef(null);
 
   return (
-    <section ref={ref} className={`py-24 ${className}`}>
-      <div className="mx-auto max-w-6xl px-6">
+    <section ref={ref} className={`py-12 md:py-20 lg:py-24 ${className}`}>
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,11 +32,11 @@ export default function SectionWrapper({
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent/70">
             {label}
           </p>
-          <h2 className="mt-3 text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-white">
+          <h2 className="mt-3 text-[clamp(1.75rem,5vw,3.5rem)] font-bold leading-tight text-white">
             {title}
           </h2>
           {subtitle && (
-            <p className="mt-4 max-w-2xl text-base text-white/50 leading-relaxed">
+            <p className="mt-4 max-w-2xl text-sm sm:text-base text-white/50 leading-relaxed">
               {subtitle}
             </p>
           )}
@@ -47,7 +47,7 @@ export default function SectionWrapper({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-12"
+          className="mt-8 md:mt-12"
         >
           {children}
         </motion.div>

@@ -15,7 +15,7 @@ export default function AudienceProfileSection({
       title="Who You're Talking To"
       subtitle={profile.coreDemographic}
     >
-      <div className="grid gap-6 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div className="rounded-xl border border-white/5 bg-surface-1 p-5">
           <h3 className="text-xs font-mono uppercase tracking-wider text-accent/70 mb-4">
             What Drives Them

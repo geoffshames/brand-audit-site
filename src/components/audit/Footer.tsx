@@ -6,8 +6,8 @@ export default function Footer({ brandName }: { brandName: string }) {
   const subject = encodeURIComponent(`${brandName} x Crowd Control`);
 
   return (
-    <footer className="border-t border-white/5 py-20">
-      <div className="mx-auto max-w-6xl px-6">
+    <footer className="border-t border-white/5 py-12 md:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export default function Footer({ brandName }: { brandName: string }) {
           <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-white mb-4">
             Ready to act on these insights?
           </h2>
-          <p className="max-w-lg mx-auto text-base text-white/50 leading-relaxed mb-8">
+          <p className="max-w-lg mx-auto text-sm sm:text-base text-white/50 leading-relaxed mb-8">
             This audit is just the beginning. Let&apos;s turn these findings into a
             strategy that moves {brandName} forward.
           </p>

@@ -21,7 +21,7 @@ export default function BrandSnapshotSection({
       title="Brand Snapshot"
       subtitle={snapshot.positioning}
     >
-      <div className="mb-12 rounded-xl border border-white/5 bg-surface-1 p-6">
+      <div className="mb-8 md:mb-12 rounded-xl border border-white/5 bg-surface-1 p-4 sm:p-6">
         <div className="flex items-center gap-4 mb-3">
           <span className="text-xs font-mono uppercase tracking-wider text-white/40">
             Digital Presence

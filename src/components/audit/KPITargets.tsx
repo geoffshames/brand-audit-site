@@ -29,11 +29,11 @@ export default function KPITargetsSection({
               {target.metric}
             </p>
 
-            <div className="flex items-center justify-center gap-4 mb-3">
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-3">
               {target.currentEstimate && (
                 <>
                   <div>
-                    <p className="text-lg font-bold text-white/30">
+                    <p className="text-base sm:text-lg font-bold text-white/30 break-words">
                       {target.currentEstimate}
                     </p>
                     <p className="text-[10px] text-white/20 uppercase tracking-wider">
