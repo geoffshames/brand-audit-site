@@ -21,6 +21,8 @@ export async function generateMetadata({
   const audit = await getAuditBySlug(slug);
   if (!audit) return { title: "Not Found" };
 
+  const ogImage = `/api/og?brand=${encodeURIComponent(audit.intake.brandName)}&tagline=${encodeURIComponent(audit.tagline || "")}&accent=${encodeURIComponent(audit.accentColor || "#FD3737")}`;
+
   return {
     title: `${audit.intake.brandName} — Brand & Digital Audit × Crowd Control Digital`,
     description: audit.tagline || `Comprehensive brand audit for ${audit.intake.brandName}`,
@@ -29,6 +31,13 @@ export async function generateMetadata({
       description: audit.tagline,
       type: "website",
       siteName: "Crowd Control Digital",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: `${audit.intake.brandName} Brand Audit` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${audit.intake.brandName} — Brand Audit`,
+      description: audit.tagline,
+      images: [ogImage],
     },
   };
 }
