@@ -22,7 +22,7 @@ const auditData: AuditData = {
     industry: "AI Music & Virtual Entertainment",
     socialUrls: {
       instagram: "https://www.instagram.com/tata_taktumi/",
-      tiktok: undefined,
+      tiktok: "https://www.tiktok.com/@tatataktumi",
       linkedin: undefined,
       x: undefined,
       facebook: undefined,
@@ -66,7 +66,7 @@ const auditData: AuditData = {
     ],
     digitalPresenceScore: "weak",
     digitalPresenceReasoning:
-      "Despite backing from a Grammy-winning producer and coverage in Rolling Stone, Billboard, and NPR, TaTa's actual digital metrics are extremely modest: ~2,200 Spotify monthly listeners, ~4,700 Instagram followers, ~196K YouTube views on the debut video, and ~45K Spotify streams on 'Glitch x Pulse.' There is no dedicated website, no TikTok presence, no X/Twitter account, and no email list. The digital footprint is almost entirely press-driven rather than fan-driven.",
+      "Despite backing from a Grammy-winning producer and coverage in Rolling Stone, Billboard, and NPR, TaTa's actual digital metrics are extremely modest: ~2,200 Spotify monthly listeners, ~4,700 Instagram followers, ~196K YouTube views on the debut video, and ~45K Spotify streams on 'Glitch x Pulse.' There is no dedicated website, no X/Twitter account, and no email list. The digital footprint is almost entirely press-driven rather than fan-driven.",
     strengths: [
       {
         title: "Legacy Producer Co-sign",
@@ -93,7 +93,7 @@ const auditData: AuditData = {
       {
         title: "No TikTok or Short-Form Video Strategy",
         detail:
-          "TaTa has zero TikTok presence despite being a CGI character tailor-made for the platform. Polar (a competitor) built 1.6M TikTok followers through dance content. TaTa's visual identity and music style are inherently viral-ready — the absence of a TikTok strategy is leaving the biggest audience acquisition channel completely untouched.",
+          "TaTa has a TikTok account (@tatataktumi) but it is severely underutilized — minimal posting cadence despite being a CGI character tailor-made for the platform. Polar (a competitor) built 1.6M TikTok followers through dance content. TaTa's visual identity and music style are inherently viral-ready — the absence of a TikTok strategy is leaving the biggest audience acquisition channel completely untouched.",
       },
       {
         title: "Trust Deficit from K Fresh Controversy",
@@ -228,7 +228,7 @@ const auditData: AuditData = {
     {
       title: "TikTok-First Content Blitz",
       reasoning:
-        "TaTa has zero TikTok presence despite being a CGI character perfectly suited for the platform. Competitor Polar built 1.6M followers through dance content alone. With 60% of 18-29 year olds already consuming AI music, TikTok is the #1 channel to convert curiosity into fandom. A dedicated TikTok strategy with daily posts, sound trends, and interactive content could 10x visibility in 90 days.",
+        "TaTa has a TikTok account (@tatataktumi) but posts infrequently despite being a CGI character perfectly suited for the platform. Competitor Polar built 1.6M followers through dance content alone. With 60% of 18-29 year olds already consuming AI music, TikTok is the #1 channel to convert curiosity into fandom. A dedicated TikTok strategy with daily posts, sound trends, and interactive content could 10x visibility in 90 days.",
       impact: "high",
       effort: "medium",
     },
@@ -267,7 +267,7 @@ const auditData: AuditData = {
       description:
         "Create @tata_taktumi on TikTok with a content calendar of 1-2 daily posts: dance clips, 'AI creates a song in 60 seconds' process videos, duets with trending sounds, and reaction content. Use TaTa's CGI capabilities to create content no human could — teleporting between locations, transforming aesthetics mid-video, interacting with digital environments.",
       actionItems: [
-        "Register and brand @tata_taktumi on TikTok with verified creator status",
+        "Activate and scale @tatataktumi on TikTok with verified creator status and consistent posting cadence",
         "Produce 30-day backlog of short-form content mixing music clips, dance, and process videos",
         "Identify and ride 3-5 trending sounds per week with TaTa-branded versions",
       ],

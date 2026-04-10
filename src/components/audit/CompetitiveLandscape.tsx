@@ -43,7 +43,7 @@ export default function CompetitiveLandscapeSection({
       subtitle={landscape.landscapeSummary}
     >
       <div className="mb-8 flex items-center gap-3">
-        <span className="text-xs font-mono uppercase tracking-wider text-white/40">
+        <span className="text-xs font-mono uppercase tracking-wider text-white/80">
           Market Density:
         </span>
         <span className={`text-sm font-semibold ${crowdedness.color}`}>
@@ -92,14 +92,14 @@ export default function CompetitiveLandscapeSection({
                   href={comp.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] text-white/30 hover:text-accent transition-colors"
+                  className="text-[10px] text-white/70 hover:text-accent transition-colors"
                 >
                   ↗
                 </a>
               </div>
             </div>
 
-            <p className="text-xs text-white/50 leading-relaxed mb-4">
+            <p className="text-xs text-white/70 leading-relaxed mb-4">
               {comp.positioning}
             </p>
 
@@ -108,13 +108,13 @@ export default function CompetitiveLandscapeSection({
                 <span className="text-[10px] font-mono uppercase tracking-wider text-green-400/60">
                   Strength
                 </span>
-                <p className="text-xs text-white/50">{comp.keyStrength}</p>
+                <p className="text-xs text-white/70">{comp.keyStrength}</p>
               </div>
               <div>
                 <span className="text-[10px] font-mono uppercase tracking-wider text-red-400/60">
                   Weakness
                 </span>
-                <p className="text-xs text-white/50">{comp.keyWeakness}</p>
+                <p className="text-xs text-white/70">{comp.keyWeakness}</p>
               </div>
               <div className="rounded-lg bg-accent/5 border border-accent/10 p-2.5 mt-2">
                 <span className="text-[10px] font-mono uppercase tracking-wider text-accent/70">

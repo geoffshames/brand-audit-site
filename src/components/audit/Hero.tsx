@@ -42,10 +42,10 @@ export default function Hero({ audit }: { audit: AuditData }) {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="mt-4 sm:mt-6 flex flex-wrap items-center gap-2 sm:gap-3"
         >
-          <span className="text-[clamp(0.65rem,1.2vw,0.9rem)] uppercase tracking-[0.2em] text-white/40">
+          <span className="text-[clamp(0.65rem,1.2vw,0.9rem)] uppercase tracking-[0.2em] text-white/80">
             Prepared by
           </span>
-          <span className="text-[clamp(0.65rem,1.2vw,0.9rem)] font-semibold uppercase tracking-[0.15em] text-white/50">
+          <span className="text-[clamp(0.65rem,1.2vw,0.9rem)] font-semibold uppercase tracking-[0.15em] text-white/70">
             Crowd Control Digital
           </span>
         </motion.div>
@@ -55,7 +55,7 @@ export default function Hero({ audit }: { audit: AuditData }) {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base text-white/60 leading-relaxed"
+            className="mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base text-white/80 leading-relaxed"
           >
             {audit.tagline}
           </motion.p>
@@ -65,7 +65,7 @@ export default function Hero({ audit }: { audit: AuditData }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.6 }}
-          className="mt-8 sm:mt-12 flex items-center gap-3 text-white/20"
+          className="mt-8 sm:mt-12 flex items-center gap-3 text-white/35"
         >
           <div className="h-8 w-px bg-white/20" />
           <span className="font-mono text-[10px] uppercase tracking-widest">

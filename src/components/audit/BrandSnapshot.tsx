@@ -23,7 +23,7 @@ export default function BrandSnapshotSection({
     >
       <div className="mb-8 md:mb-12 rounded-xl border border-white/5 bg-surface-1 p-4 sm:p-6">
         <div className="flex items-center gap-4 mb-3">
-          <span className="text-xs font-mono uppercase tracking-wider text-white/40">
+          <span className="text-xs font-mono uppercase tracking-wider text-white/80">
             Digital Presence
           </span>
           <span
@@ -34,7 +34,7 @@ export default function BrandSnapshotSection({
             {snapshot.digitalPresenceScore}
           </span>
         </div>
-        <p className="text-sm text-white/60 leading-relaxed">
+        <p className="text-sm text-white/80 leading-relaxed">
           {snapshot.digitalPresenceReasoning}
         </p>
       </div>
@@ -56,7 +56,7 @@ export default function BrandSnapshotSection({
                 <span className="text-sm font-semibold text-white">
                   {item.adjective}
                 </span>
-                <p className="mt-0.5 text-xs text-white/40 leading-relaxed">
+                <p className="mt-0.5 text-xs text-white/80 leading-relaxed">
                   {item.evidence}
                 </p>
               </motion.div>
@@ -68,7 +68,7 @@ export default function BrandSnapshotSection({
           <h3 className="text-xs font-mono uppercase tracking-wider text-accent/70 mb-4">
             Visual Identity
           </h3>
-          <p className="text-sm text-white/60 leading-relaxed">
+          <p className="text-sm text-white/80 leading-relaxed">
             {snapshot.visualIdentity}
           </p>
 
@@ -79,7 +79,7 @@ export default function BrandSnapshotSection({
             {snapshot.keyOfferings.map((offering, i) => (
               <span
                 key={i}
-                className="rounded-full border border-white/10 bg-surface-2 px-3 py-1 text-xs text-white/60"
+                className="rounded-full border border-white/10 bg-surface-2 px-3 py-1 text-xs text-white/80"
               >
                 {offering}
               </span>
@@ -106,7 +106,7 @@ export default function BrandSnapshotSection({
                 <h4 className="text-sm font-semibold text-green-400">
                   {item.title}
                 </h4>
-                <p className="mt-1 text-xs text-white/50 leading-relaxed">
+                <p className="mt-1 text-xs text-white/70 leading-relaxed">
                   {item.detail}
                 </p>
               </motion.div>
@@ -131,7 +131,7 @@ export default function BrandSnapshotSection({
                 <h4 className="text-sm font-semibold text-red-400">
                   {item.title}
                 </h4>
-                <p className="mt-1 text-xs text-white/50 leading-relaxed">
+                <p className="mt-1 text-xs text-white/70 leading-relaxed">
                   {item.detail}
                 </p>
               </motion.div>

@@ -31,7 +31,7 @@ export default function AudienceProfileSection({
                 className="flex items-start gap-2"
               >
                 <span className="mt-1 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
-                <span className="text-sm text-white/60">{driver}</span>
+                <span className="text-sm text-white/80">{driver}</span>
               </motion.div>
             ))}
           </div>
@@ -52,7 +52,7 @@ export default function AudienceProfileSection({
                 className="flex items-start gap-2"
               >
                 <span className="mt-1 h-1.5 w-1.5 rounded-full bg-red-400 shrink-0" />
-                <span className="text-sm text-white/60">{point}</span>
+                <span className="text-sm text-white/80">{point}</span>
               </motion.div>
             ))}
           </div>
@@ -73,7 +73,7 @@ export default function AudienceProfileSection({
                 className="flex items-start gap-2"
               >
                 <span className="mt-1 h-1.5 w-1.5 rounded-full bg-green-400 shrink-0" />
-                <span className="text-sm text-white/60">{trigger}</span>
+                <span className="text-sm text-white/80">{trigger}</span>
               </motion.div>
             ))}
           </div>
@@ -90,7 +90,7 @@ export default function AudienceProfileSection({
               <span className="text-xs font-semibold text-white/80">
                 {item.platform}
               </span>
-              <p className="mt-1 text-xs text-white/40">{item.behavior}</p>
+              <p className="mt-1 text-xs text-white/80">{item.behavior}</p>
             </div>
           ))}
         </div>
@@ -98,7 +98,7 @@ export default function AudienceProfileSection({
 
       {profile.voiceOfCustomer.length > 0 && (
         <div className="mt-6">
-          <h3 className="text-xs font-mono uppercase tracking-wider text-white/40 mb-4">
+          <h3 className="text-xs font-mono uppercase tracking-wider text-white/80 mb-4">
             Voice of Customer
           </h3>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -111,10 +111,10 @@ export default function AudienceProfileSection({
                 transition={{ delay: i * 0.15 }}
                 className="rounded-xl border-l-2 border-accent/30 bg-surface-1 p-4"
               >
-                <p className="text-sm text-white/60 italic leading-relaxed">
+                <p className="text-sm text-white/80 italic leading-relaxed">
                   &ldquo;{item.quote}&rdquo;
                 </p>
-                <cite className="mt-2 block text-[10px] font-mono uppercase tracking-wider text-white/30 not-italic">
+                <cite className="mt-2 block text-[10px] font-mono uppercase tracking-wider text-white/70 not-italic">
                   — {item.source}
                 </cite>
               </motion.blockquote>

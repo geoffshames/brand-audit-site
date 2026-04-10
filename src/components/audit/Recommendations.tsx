@@ -60,7 +60,7 @@ export default function RecommendationsSection({
                   <div className="flex items-center gap-2 mb-3">
                     <span
                       className={`rounded-full px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider ${
-                        categoryColors[rec.category] || "bg-white/10 text-white/40"
+                        categoryColors[rec.category] || "bg-white/10 text-white/80"
                       }`}
                     >
                       {rec.category}
@@ -70,19 +70,19 @@ export default function RecommendationsSection({
                   <h4 className="text-base font-semibold text-white mb-2">
                     {rec.title}
                   </h4>
-                  <p className="text-sm text-white/50 leading-relaxed mb-4">
+                  <p className="text-sm text-white/70 leading-relaxed mb-4">
                     {rec.description}
                   </p>
 
                   <div className="border-t border-white/5 pt-3">
-                    <span className="text-[10px] font-mono uppercase tracking-wider text-white/30 mb-2 block">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-white/70 mb-2 block">
                       Action Items
                     </span>
                     <ul className="space-y-1.5">
                       {rec.actionItems.map((item, j) => (
                         <li
                           key={j}
-                          className="flex items-start gap-2 text-xs text-white/50"
+                          className="flex items-start gap-2 text-xs text-white/70"
                         >
                           <span className="mt-1.5 h-1 w-1 rounded-full bg-accent/50 shrink-0" />
                           {item}

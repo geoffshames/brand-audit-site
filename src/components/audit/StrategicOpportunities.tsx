@@ -7,7 +7,7 @@ import type { StrategicOpportunity } from "@/lib/types/audit";
 const impactColors = {
   high: "bg-green-500/20 text-green-400",
   medium: "bg-yellow-500/20 text-yellow-400",
-  low: "bg-white/10 text-white/40",
+  low: "bg-white/10 text-white/80",
 };
 
 const effortColors = {
@@ -61,7 +61,7 @@ export default function StrategicOpportunitiesSection({
                     {opp.title}
                   </h3>
                 </div>
-                <p className="text-sm text-white/50 leading-relaxed sm:pl-10">
+                <p className="text-sm text-white/70 leading-relaxed sm:pl-10">
                   {opp.reasoning}
                 </p>
               </div>

@@ -18,7 +18,7 @@ export default function Footer({ brandName }: { brandName: string }) {
           <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-white mb-4">
             Ready to act on these insights?
           </h2>
-          <p className="max-w-lg mx-auto text-sm sm:text-base text-white/50 leading-relaxed mb-8">
+          <p className="max-w-lg mx-auto text-sm sm:text-base text-white/70 leading-relaxed mb-8">
             This audit is just the beginning. Let&apos;s turn these findings into a
             strategy that moves {brandName} forward.
           </p>
@@ -31,7 +31,7 @@ export default function Footer({ brandName }: { brandName: string }) {
         </motion.div>
 
         <div className="mt-16 flex flex-col items-center gap-4">
-          <span className="text-sm font-semibold uppercase tracking-[0.15em] text-white/30">
+          <span className="text-sm font-semibold uppercase tracking-[0.15em] text-white/70">
             Crowd Control Digital
           </span>
           <span className="text-[10px] font-mono uppercase tracking-[0.15em] text-white/15">
