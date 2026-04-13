@@ -62,7 +62,7 @@ export default function AuditPageClient({ audit }: { audit: AuditData }) {
         <ServiceRoadmapSection roadmap={audit.serviceRoadmap} />
       )}
 
-      {audit.images?.product && (
+      {audit.images?.product && audit.releaseSnapshot && (
         <ImageBreak src={audit.images.product} alt="Release landscape" />
       )}
 
@@ -70,7 +70,7 @@ export default function AuditPageClient({ audit }: { audit: AuditData }) {
         <ReleaseSnapshotSection snapshot={audit.releaseSnapshot} />
       )}
 
-      {audit.images?.texture && (
+      {audit.images?.texture && audit.campaignBlueprint && (
         <ImageBreak src={audit.images.texture} alt="Campaign texture" />
       )}
 
