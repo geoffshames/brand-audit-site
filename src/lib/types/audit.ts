@@ -120,6 +120,8 @@ export interface AuditData {
   kpiTargets?: KPITarget[];
   serviceRoadmap?: ServiceRoadmap[];
   images?: AuditImages;
+  releaseSnapshot?: ReleaseSnapshot;
+  campaignBlueprint?: CampaignBlueprint;
   accentColor: string;
   auditTitle: string;
   tagline: string;
@@ -164,4 +166,42 @@ export interface PipelineEvent {
   step?: string;
   message: string;
   data?: Record<string, unknown>;
+}
+
+// ─── Release Snapshot (hybrid section) ───
+
+export interface ReleaseEntry {
+  artistName: string;
+  releaseTitle: string;
+  releaseDate: string;
+  label?: string;
+  marketingAnalysis: string;
+  performanceTier: "breakout" | "solid" | "underperformed";
+}
+
+export interface ReleaseSnapshot {
+  labelReleases: ReleaseEntry[];
+  competitorReleases: ReleaseEntry[];
+  synthesis: string;
+}
+
+// ─── Campaign Blueprint (hybrid section) ───
+
+export interface CampaignWeek {
+  week: number;
+  theme: string;
+  actions: string[];
+}
+
+export interface CampaignBlueprint {
+  artist: string;
+  artistDescription: string;
+  campaignTitle: string;
+  campaignSummary: string;
+  contentPillars: string[];
+  platformStrategy: { platform: string; strategy: string }[];
+  creatorActivation: string;
+  weeks: CampaignWeek[];
+  keyMilestones: string[];
+  teaser: string;
 }

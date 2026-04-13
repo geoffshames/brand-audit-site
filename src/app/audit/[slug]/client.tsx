@@ -9,6 +9,8 @@ import StrategicOpportunitiesSection from "@/components/audit/StrategicOpportuni
 import RecommendationsSection from "@/components/audit/Recommendations";
 import KPITargetsSection from "@/components/audit/KPITargets";
 import ServiceRoadmapSection from "@/components/audit/ServiceRoadmap";
+import ReleaseSnapshotSection from "@/components/audit/ReleaseSnapshot";
+import CampaignBlueprintSection from "@/components/audit/CampaignBlueprint";
 import ImageBreak from "@/components/audit/ImageBreak";
 import Footer from "@/components/audit/Footer";
 
@@ -29,7 +31,7 @@ export default function AuditPageClient({ audit }: { audit: AuditData }) {
       )}
 
       {audit.images?.hero2 && (
-        <ImageBreak src={audit.images.hero2} alt="Brand lifestyle" />
+        <ImageBreak src={audit.images.hero2} alt="Brand environment" />
       )}
 
       {audit.competitiveLandscape && (
@@ -58,6 +60,22 @@ export default function AuditPageClient({ audit }: { audit: AuditData }) {
 
       {audit.serviceRoadmap && audit.serviceRoadmap.length > 0 && (
         <ServiceRoadmapSection roadmap={audit.serviceRoadmap} />
+      )}
+
+      {audit.images?.product && (
+        <ImageBreak src={audit.images.product} alt="Release landscape" />
+      )}
+
+      {audit.releaseSnapshot && (
+        <ReleaseSnapshotSection snapshot={audit.releaseSnapshot} />
+      )}
+
+      {audit.images?.texture && (
+        <ImageBreak src={audit.images.texture} alt="Campaign texture" />
+      )}
+
+      {audit.campaignBlueprint && (
+        <CampaignBlueprintSection blueprint={audit.campaignBlueprint} />
       )}
 
       {audit.images?.brutalist && (
