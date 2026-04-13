@@ -272,6 +272,26 @@ const auditData: AuditData = {
         source: "Reddit r/Metal",
       },
     ],
+    personas: [
+      {
+        name: "The Lifer",
+        age: "25–34",
+        description: "Grew up on metalcore and progressive metal. Follows artists across eras, defends their favourite records online, and attends multiple tours per year. The highest-LTV fan in the ecosystem.",
+        tags: ["Vinyl Collector", "Concert Regular", "Label-Aware", "Early Adopter"],
+      },
+      {
+        name: "The Algorithm Kid",
+        age: "18–24",
+        description: "Found Sumerian artists through TikTok guitar clips and YouTube reaction videos. Building their heavy music identity in real time. Streams first, buys merch when the artist breaks through personally.",
+        tags: ["Stream-First", "TikTok Driven", "Identity Seeker", "Casual Merch Buyer"],
+      },
+      {
+        name: "The Crossover Fan",
+        age: "18–28",
+        description: "Entry point was Poppy, Sleeping With Sirens, or Kittie. Bridges pop-adjacent and heavy music. Fashion-forward, culturally engaged, and more likely to engage with visual content and editorial aesthetics.",
+        tags: ["Multi-Genre", "Visually Driven", "Merch Buyer", "Socially Active"],
+      },
+    ],
   },
   strategicOpportunities: [
     {

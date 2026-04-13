@@ -63,6 +63,13 @@ export interface DemographicCharts {
   educationLevel: string;
 }
 
+export interface AudiencePersona {
+  name: string;
+  age: string;
+  description: string;
+  tags: string[];
+}
+
 export interface AudienceProfile {
   coreDemographic: string;
   demographicCharts?: DemographicCharts;
@@ -71,6 +78,7 @@ export interface AudienceProfile {
   painPoints: string[];
   purchaseTriggers: string[];
   voiceOfCustomer: { quote: string; source: string }[];
+  personas?: AudiencePersona[];
 }
 
 export interface StrategicOpportunity {
