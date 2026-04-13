@@ -72,73 +72,6 @@ function DonutChart({ segments }: { segments: { label: string; percentage: numbe
   );
 }
 
-/* ─────────────────────────────────────────────
-   Demographic Stat Cards (4-up grid)
-───────────────────────────────────────────── */
-function DemoStatCards({ charts }: { charts: NonNullable<AudienceProfile["demographicCharts"]> }) {
-  const sorted = [...charts.ageDistribution].sort((a, b) => b.percentage - a.percentage);
-  const coreAge = sorted[0]?.label ?? "—";
-  const secondaryAge = sorted[1]?.label ?? "—";
-
-  const topGender = [...charts.genderSplit].sort((a, b) => b.percentage - a.percentage)[0];
-  const genderLabel = topGender ? `${topGender.percentage}% ${topGender.label.toLowerCase()} skew` : "—";
-
-  const [primary, ...rest] = charts.topMarkets;
-
-  const cards = [
-    { label: "Age Range", value: `${coreAge} core`, sub: `${secondaryAge} secondary` },
-    { label: "Gender", value: genderLabel, sub: null },
-    {
-      label: "Geography",
-      value: primary ?? "—",
-      sub: rest.length > 0 ? rest.join(", ") : null,
-      primaryLabel: true,
-    },
-    { label: "Income", value: charts.incomeLevel, sub: "Disposable, concert/merch-ready" },
-  ];
-
-  return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/5 mb-8 rounded-sm overflow-hidden border border-white/8">
-      {cards.map((card, i) => (
-        <motion.div
-          key={card.label}
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: i * 0.08 }}
-          className="bg-zinc-900 px-5 py-5 relative"
-        >
-          <span
-            className="absolute top-0 left-0 w-8 h-[2px]"
-            style={{ backgroundColor: "var(--color-accent, #FD3737)" }}
-          />
-          <p className="text-[9px] font-mono uppercase tracking-widest text-white/40 mb-2 mt-1">
-            {card.label}
-          </p>
-          {"primaryLabel" in card && card.primaryLabel ? (
-            <>
-              <p className="text-[8px] font-mono uppercase tracking-widest text-white/30 mb-0.5">Primary</p>
-              <p className="text-sm font-bold text-white leading-snug">{card.value}</p>
-              {card.sub && (
-                <>
-                  <p className="text-[8px] font-mono uppercase tracking-widest text-white/30 mt-2 mb-0.5">Secondary</p>
-                  <p className="text-[11px] text-white/60 leading-tight">{card.sub}</p>
-                </>
-              )}
-            </>
-          ) : (
-            <>
-              <p className="text-sm font-bold text-white leading-snug">{card.value}</p>
-              {card.sub && (
-                <p className="text-[11px] text-white/40 mt-0.5 leading-tight">{card.sub}</p>
-              )}
-            </>
-          )}
-        </motion.div>
-      ))}
-    </div>
-  );
-}
 
 /* ─────────────────────────────────────────────
    Demographics Analytics Panel
@@ -305,10 +238,6 @@ export default function AudienceProfileSection({ profile }: { profile: AudienceP
       label="03 — Audience Intelligence"
       title="Who You're Talking To"
     >
-      {/* 4 stat cards */}
-      {profile.demographicCharts && (
-        <DemoStatCards charts={profile.demographicCharts} />
-      )}
 
       {/* Analytics panel: age bars + donut + geo + profile */}
       {profile.demographicCharts && (
