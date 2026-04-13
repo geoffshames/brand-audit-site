@@ -205,8 +205,8 @@ const auditData: AuditData = {
       ],
       genderSplit: [
         { label: "Male",       percentage: 67, color: "#FD3737" },
-        { label: "Female",     percentage: 28, color: "#a78bfa" },
-        { label: "Non-binary", percentage: 5,  color: "#34d399" },
+        { label: "Female",     percentage: 28, color: "rgba(255,255,255,0.6)" },
+        { label: "Non-binary", percentage: 5,  color: "rgba(255,255,255,0.25)" },
       ],
       topMarkets: ["US", "UK", "Germany", "Australia", "Canada"],
       incomeLevel: "$40–75K household",
