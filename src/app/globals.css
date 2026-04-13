@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'N27';
+  src: url('/brand/N27-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-accent: #3F76FF;
   --color-accent-dim: #3F76FF40;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "Work Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "N27", "Work Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
 
@@ -25,6 +36,10 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
 }
 
 ::selection {

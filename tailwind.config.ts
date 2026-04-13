@@ -16,7 +16,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        sans: ["Work Sans", "system-ui", "sans-serif"],
+        display: ["N27", "Work Sans", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
       animation: {

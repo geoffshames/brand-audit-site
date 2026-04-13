@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Footer({ brandName }: { brandName: string }) {
   const subject = encodeURIComponent(`${brandName} x Crowd Control`);
@@ -15,7 +16,7 @@ export default function Footer({ brandName }: { brandName: string }) {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-white mb-4">
+          <h2 className="font-display text-[clamp(1.5rem,4vw,2.5rem)] font-bold text-white mb-4">
             Ready to act on these insights?
           </h2>
           <p className="max-w-lg mx-auto text-sm sm:text-base text-white/70 leading-relaxed mb-8">
@@ -31,9 +32,14 @@ export default function Footer({ brandName }: { brandName: string }) {
         </motion.div>
 
         <div className="mt-16 flex flex-col items-center gap-4">
-          <span className="text-sm font-semibold uppercase tracking-[0.15em] text-white/70">
-            Crowd Control Digital
-          </span>
+          <Image
+            src="/brand/CC-LOGO-2024-WHITE.png"
+            alt="Crowd Control Digital"
+            width={160}
+            height={48}
+            className="opacity-70 hover:opacity-100 transition-opacity"
+            style={{ objectFit: "contain" }}
+          />
           <span className="text-[10px] font-mono uppercase tracking-[0.15em] text-white/15">
             {new Date().getFullYear()}
           </span>
