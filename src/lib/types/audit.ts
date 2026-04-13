@@ -40,6 +40,9 @@ export interface Competitor {
   website: string;
   instagram?: string;
   tiktok?: string;
+  instagramFollowers?: string;
+  tiktokFollowers?: string;
+  threatLevel?: "high" | "medium" | "low";
   positioning: string;
   keyStrength: string;
   keyWeakness: string;
@@ -52,8 +55,17 @@ export interface CompetitiveLandscape {
   marketCrowdedness: "low" | "moderate" | "high" | "saturated";
 }
 
+export interface DemographicCharts {
+  ageDistribution: { label: string; percentage: number }[];
+  genderSplit: { label: string; percentage: number; color: string }[];
+  topMarkets: string[];
+  incomeLevel: string;
+  educationLevel: string;
+}
+
 export interface AudienceProfile {
   coreDemographic: string;
+  demographicCharts?: DemographicCharts;
   psychographicDrivers: string[];
   onlineBehavior: { platform: string; behavior: string }[];
   painPoints: string[];

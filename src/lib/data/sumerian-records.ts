@@ -87,7 +87,7 @@ const auditData: AuditData = {
       {
         title: "Label Brand vs. Artist Brand Imbalance",
         detail:
-          "Sumerian's social presence is almost entirely artist-led, meaning the label itself has no consistent editorial voice. A structured content framework — label-level interviews, 'Sumerian Selects' playlists, behind-the-scenes label culture — would transform followers from passive observers into active label loyalists. CCD would architect this framework in month one.",
+          "Sumerian's social presence is almost entirely artist-led, meaning the label itself has no consistent editorial voice. A structured content framework — label-level interviews, 'Sumerian Selects' playlists, behind-the-scenes label culture — would transform followers from passive observers into active label loyalists. Our team would architect this framework in month one.",
       },
       {
         title: "Creator Economy Underexploited",
@@ -108,6 +108,9 @@ const auditData: AuditData = {
         website: "https://www.epitaph.com",
         instagram: "https://www.instagram.com/epitaphrecords/",
         tiktok: undefined,
+        instagramFollowers: "409K",
+        tiktokFollowers: undefined,
+        threatLevel: "high" as const,
         positioning:
           "The original punk-rooted independent that successfully crossover-trained Falling In Reverse into 2024's most commercially successful rock album.",
         keyStrength:
@@ -122,6 +125,9 @@ const auditData: AuditData = {
         website: "https://www.riserecords.com",
         instagram: "https://www.instagram.com/riserecords/",
         tiktok: undefined,
+        instagramFollowers: "414K",
+        tiktokFollowers: "32K",
+        threatLevel: "medium" as const,
         positioning:
           "Mid-tier post-hardcore and metalcore label with a consistent release cadence but diminishing marquee acts.",
         keyStrength:
@@ -136,6 +142,9 @@ const auditData: AuditData = {
         website: "https://fearlessrecords.com",
         instagram: "https://www.instagram.com/fearlessrecords/",
         tiktok: undefined,
+        instagramFollowers: "378K",
+        tiktokFollowers: "48K",
+        threatLevel: "medium" as const,
         positioning:
           "Veteran pop-punk and alternative label celebrating its 25th anniversary in 2024, with a strong history in the Warped Tour ecosystem.",
         keyStrength:
@@ -150,6 +159,9 @@ const auditData: AuditData = {
         website: "https://purenoise.net",
         instagram: "https://www.instagram.com/purenoiserecs/",
         tiktok: undefined,
+        instagramFollowers: "188K",
+        tiktokFollowers: "22K",
+        threatLevel: "low" as const,
         positioning:
           "Lean, focused independent specializing in pop-punk revival and melodic hardcore — the label behind The Story So Far and State Champs.",
         keyStrength:
@@ -157,13 +169,16 @@ const auditData: AuditData = {
         keyWeakness:
           "Pure Noise's audience skews younger and lighter than Sumerian's — they lack the genre depth to compete in heavy metal, progressive, or the emerging deathcore space.",
         exploitableGap:
-          "Pure Noise doesn't have a social media footprint that matches their critical reputation. Sumerian's 687K Instagram following gives CCD campaigns far more owned amplification out of the gate.",
+          "Pure Noise doesn't have a social media footprint that matches their critical reputation. Sumerian's 687K Instagram following gives Crowd Control campaigns far more owned amplification out of the gate.",
       },
       {
         name: "Hopeless Records",
         website: "https://hopelessrecords.com",
         instagram: "https://www.instagram.com/hopelessrecords/",
         tiktok: undefined,
+        instagramFollowers: "224K",
+        tiktokFollowers: "18K",
+        threatLevel: "low" as const,
         positioning:
           "Van Nuys-based independent committed to 'making a positive impact through music' — strongest in pop-punk and melodic punk.",
         keyStrength:
@@ -181,6 +196,22 @@ const auditData: AuditData = {
   audienceProfile: {
     coreDemographic:
       "Core Sumerian audience: 18-34, predominantly male (65-70%), US-concentrated with strong UK, Australian, and German pockets. Secondary demographic is female 18-28 driven by Poppy, Sleeping With Sirens, and Kittie. College-educated or in trades, disposable income sufficient for concert tickets, vinyl, and merch — a high-LTV audience when activated correctly.",
+    demographicCharts: {
+      ageDistribution: [
+        { label: "18–24", percentage: 32 },
+        { label: "25–34", percentage: 38 },
+        { label: "35–44", percentage: 22 },
+        { label: "45+",   percentage: 8  },
+      ],
+      genderSplit: [
+        { label: "Male",       percentage: 67, color: "#FD3737" },
+        { label: "Female",     percentage: 28, color: "#a78bfa" },
+        { label: "Non-binary", percentage: 5,  color: "#34d399" },
+      ],
+      topMarkets: ["US", "UK", "Germany", "Australia", "Canada"],
+      incomeLevel: "$40–75K household",
+      educationLevel: "Some college / bachelor's",
+    },
     psychographicDrivers: [
       "Identity-forming relationship with heavy music — genre is lifestyle, not just listening preference",
       "Deep artist loyalty: follows artists across multiple albums, multiple eras, and defends them in online communities",
@@ -370,7 +401,7 @@ const auditData: AuditData = {
       metric: "Instagram Follower Growth",
       currentEstimate: "687K",
       target: "800K",
-      benchmark: "Comparable labels growing 8-12% annually; CCD targets 16%",
+      benchmark: "Comparable labels growing 8-12% annually; our team targets 16%",
       timeframe: "6 months",
     },
     {
@@ -397,7 +428,7 @@ const auditData: AuditData = {
     {
       metric: "Merch Store Revenue per Release",
       currentEstimate: "Baseline established in Month 1",
-      target: "+40% per campaign vs. pre-CCD baseline",
+      target: "+40% per campaign vs. pre-engagement baseline",
       benchmark: "Structured drop campaigns consistently outperform unstructured releases by 35-50%",
       timeframe: "3 months",
     },
@@ -414,7 +445,7 @@ const auditData: AuditData = {
       phase: "Phase 1",
       title: "Foundation & Audit",
       description:
-        "In weeks 1-4, CCD conducts a comprehensive audit of all existing social, paid, email, and SEO infrastructure. We establish unified tracking, build a content framework, and launch the creator mapping operation.",
+        "In weeks 1-4, our team conducts a comprehensive audit of all existing social, paid, email, and SEO infrastructure. We establish unified tracking, build a content framework, and launch the creator mapping operation.",
       deliverables: [
         "Full social and paid media audit report",
         "Content pillar strategy and 90-day editorial calendar",
@@ -427,7 +458,7 @@ const auditData: AuditData = {
       phase: "Phase 2",
       title: "Activation & Launch",
       description:
-        "Weeks 5-12 see the first full CCD-managed release campaign. Creator network goes live, content cadence activates, email capture begins, and paid media infrastructure runs its first live test with measurable results.",
+        "Weeks 5-12 see the first full Crowd Control-managed release campaign. Creator network goes live, content cadence activates, email capture begins, and paid media infrastructure runs its first live test with measurable results.",
       deliverables: [
         "First creator-activated release campaign (50+ creators mobilized)",
         "Label Instagram editorial series launch",
@@ -453,7 +484,7 @@ const auditData: AuditData = {
       phase: "Phase 4",
       title: "Long-Term Partnership",
       description:
-        "From month 7 forward, CCD operates as an embedded strategic partner — managing campaigns, advising on signings from a marketing perspective, and building the Sumerian media universe across music and film.",
+        "From month 7 forward, Crowd Control operates as an embedded strategic partner — managing campaigns, advising on signings from a marketing perspective, and building the Sumerian media universe across music and film.",
       deliverables: [
         "Ongoing release campaign management (all major Sumerian releases)",
         "Sumerian Pictures × Records cross-promotion framework live",
@@ -506,17 +537,17 @@ const auditData: AuditData = {
         releaseDate: "November 8, 2024",
         label: "Pure Noise Records",
         marketingAnalysis:
-          "Pure Noise's State Champs self-titled represented a genre repositioning play — a pop-punk act going self-titled signals a reset — that generated strong AltPress and Rock Sound coverage and performed well among the Warped Tour nostalgic demographic. Pure Noise's campaign was clean and well-executed but operated in a smaller social arena. Sumerian's scale advantage means equivalent campaign investment generates 2-3x the organic reach — a structural advantage CCD would leverage from day one.",
+          "Pure Noise's State Champs self-titled represented a genre repositioning play — a pop-punk act going self-titled signals a reset — that generated strong AltPress and Rock Sound coverage and performed well among the Warped Tour nostalgic demographic. Pure Noise's campaign was clean and well-executed but operated in a smaller social arena. Sumerian's scale advantage means equivalent campaign investment generates 2-3x the organic reach — a structural advantage Crowd Control would leverage from day one.",
         performanceTier: "solid",
       },
     ],
     synthesis:
-      "A clear pattern emerges across Sumerian's 2024-2025 releases: the label excels at artist narrative and press placement but systematically underinvests in creator activation and structured digital distribution of that narrative. Epitaph's 'Popular Monster' campaign proved that the highest commercial ceilings in heavy music now belong to releases that cross genre lines — a playbook Sumerian is uniquely positioned to execute with Hollywood Undead, Bad Omens, and Poppy simultaneously on their roster. The gap between Sumerian's current performance and their theoretical ceiling is almost entirely a marketing infrastructure gap — not an artist quality gap. That's exactly the gap CCD closes.",
+      "A clear pattern emerges across Sumerian's 2024-2025 releases: the label excels at artist narrative and press placement but systematically underinvests in creator activation and structured digital distribution of that narrative. Epitaph's 'Popular Monster' campaign proved that the highest commercial ceilings in heavy music now belong to releases that cross genre lines — a playbook Sumerian is uniquely positioned to execute with Hollywood Undead, Bad Omens, and Poppy simultaneously on their roster. The gap between Sumerian's current performance and their theoretical ceiling is almost entirely a marketing infrastructure gap — not an artist quality gap. That's exactly the gap Crowd Control closes.",
   },
   campaignBlueprint: {
     artist: "Bad Omens",
     artistDescription:
-      "Bad Omens are Sumerian's highest-ceiling act and the most strategically important artist in the heavy alternative space entering 2026. Led by vocalist Noah Sebastian, their 2023 album 'The Death of Peace of Mind' crossed platinum thresholds with zero major label support — driven by exceptional songwriting and organic fan devotion. With an album in development and four singles released in H2 2025, they are the ideal subject for CCD's first Sumerian campaign: a pre-album activation designed to build anticipation, grow new audiences, and set the largest possible launch-week ceiling for the incoming record.",
+      "Bad Omens are Sumerian's highest-ceiling act and the most strategically important artist in the heavy alternative space entering 2026. Led by vocalist Noah Sebastian, their 2023 album 'The Death of Peace of Mind' crossed platinum thresholds with zero major label support — driven by exceptional songwriting and organic fan devotion. With an album in development and four singles released in H2 2025, they are the ideal subject for our team's first Sumerian campaign: a pre-album activation designed to build anticipation, grow new audiences, and set the largest possible launch-week ceiling for the incoming record.",
     campaignTitle: "Bad Omens: Album Zero Campaign Blueprint",
     campaignSummary:
       "An 8-week pre-release activation framework that transforms Bad Omens' natural momentum into an engineered cultural moment — growing their audience by 20%+, activating a 100-creator network, and creating the launch conditions for their biggest album debut to date.",
@@ -554,7 +585,7 @@ const auditData: AuditData = {
       },
     ],
     creatorActivation:
-      "CCD deploys a tiered creator network of 100 partners specifically selected for the Bad Omens campaign. Tier 1 (5 creators, 500K-2M followers): Paid partnerships ($2K-5K each) for dedicated album review / reaction content within 48 hours of each single drop. Tier 2 (20 creators, 50K-500K): Hybrid seeding + modest paid ($300-800) targeting guitar TikTok, vocal cover, and metalcore reaction niches — these creators drive the discovery algorithm. Tier 3 (75 creators, 5K-50K): Pure seeding with exclusive access (early listens, signed merch) targeting the passionate core community. Total campaign reach estimate: 35-50M impressions across the 8-week window, at a creator spend of ~$75K versus a paid media equivalent of $400K+.",
+      "Crowd Control deploys a tiered creator network of 100 partners specifically selected for the Bad Omens campaign. Tier 1 (5 creators, 500K-2M followers): Paid partnerships ($2K-5K each) for dedicated album review / reaction content within 48 hours of each single drop. Tier 2 (20 creators, 50K-500K): Hybrid seeding + modest paid ($300-800) targeting guitar TikTok, vocal cover, and metalcore reaction niches — these creators drive the discovery algorithm. Tier 3 (75 creators, 5K-50K): Pure seeding with exclusive access (early listens, signed merch) targeting the passionate core community. Total campaign reach estimate: 35-50M impressions across the 8-week window, at a creator spend of ~$75K versus a paid media equivalent of $400K+.",
     weeks: [
       {
         week: 1,
@@ -649,7 +680,7 @@ const auditData: AuditData = {
       "YouTube mini-documentary: 500K+ views within 30 days",
     ],
     teaser:
-      "This 8-week framework is a preview of what CCD builds for every major Sumerian release — a precision-engineered campaign infrastructure that stacks owned media, earned creator reach, editorial placement, and paid amplification into a single coordinated machine. The full CCD partnership brings this firepower to every artist on the Sumerian roster, at scale, compounding with every release cycle.",
+      "This 8-week framework is a preview of what Crowd Control builds for every major Sumerian release — a precision-engineered campaign infrastructure that stacks owned media, earned creator reach, editorial placement, and paid amplification into a single coordinated machine. The full Crowd Control partnership brings this firepower to every artist on the Sumerian roster, at scale, compounding with every release cycle.",
   },
   images: {
     hero1: "/images/sumerian-records/hero1.png",
