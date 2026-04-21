@@ -142,9 +142,40 @@ export interface AuditData {
   images?: AuditImages;
   releaseSnapshot?: ReleaseSnapshot;
   campaignBlueprint?: CampaignBlueprint;
+  deepDive?: DeepDive;
   accentColor: string;
   auditTitle: string;
   tagline: string;
+}
+
+// ─── Deep Dive (layered intelligence section) ───
+
+export interface DeepDiveFinding {
+  label: string;
+  value: string;
+  context?: string;
+}
+
+export interface DeepDiveQuote {
+  text: string;
+  source: string;
+  url?: string;
+}
+
+export interface DeepDiveStream {
+  number: string;
+  title: string;
+  stance: string;
+  findings: DeepDiveFinding[];
+  quote?: DeepDiveQuote;
+}
+
+export interface DeepDive {
+  headline: string;
+  subhead: string;
+  streams: DeepDiveStream[];
+  dossierUrl?: string;
+  dossierLabel?: string;
 }
 
 export type AuditStatus =

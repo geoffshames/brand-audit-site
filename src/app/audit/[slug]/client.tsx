@@ -11,6 +11,7 @@ import KPITargetsSection from "@/components/audit/KPITargets";
 import ServiceRoadmapSection from "@/components/audit/ServiceRoadmap";
 import ReleaseSnapshotSection from "@/components/audit/ReleaseSnapshot";
 import CampaignBlueprintSection from "@/components/audit/CampaignBlueprint";
+import DeepDiveSection from "@/components/audit/DeepDive";
 import ImageBreak from "@/components/audit/ImageBreak";
 import Footer from "@/components/audit/Footer";
 
@@ -81,6 +82,8 @@ export default function AuditPageClient({ audit }: { audit: AuditData }) {
       {audit.images?.brutalist && (
         <ImageBreak src={audit.images.brutalist} alt="Visual" />
       )}
+
+      {audit.deepDive && <DeepDiveSection deepDive={audit.deepDive} />}
 
       <Footer brandName={audit.intake.brandName} />
     </div>

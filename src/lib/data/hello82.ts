@@ -554,6 +554,97 @@ const auditData: AuditData = {
     texture: "/images/hello82/texture.png",
     brutalist: "/images/hello82/brutalist.png",
   },
+  deepDive: {
+    headline: "Six research streams, one operational attack plan",
+    subhead:
+      "After the base audit shipped, we layered six additional workstreams on top: financial reverse-engineering, a partnership landscape map, leadership mapping, three years of customer sentiment, a lifecycle teardown, and a tactical Day-0 plan for WONDER. The companion dossier consolidates every finding; highlights below.",
+    streams: [
+      {
+        number: "01",
+        title: "Financial Reverse-Engineering",
+        stance:
+          "Outside-in triangulation via traffic, K-pop-category conversion benchmarks, and partnership economics.",
+        findings: [
+          { label: "Monthly GMV band", value: "$65K – $1.7M", context: "bear / base / KAMP-week spike" },
+          { label: "Annual GMV estimate", value: "$5 – $12M", context: "weighted across peak and trough months" },
+          { label: "Blended gross margin", value: "50 – 58%", context: "licensed merch drags; KAMP lifts" },
+          { label: "Enterprise-value target", value: "$18 – $40M", context: "low-end multiple given ops strain" },
+          { label: "WONDER margin headroom", value: "+14 – 18 pts", context: "from YG Plus + 1688 sourcing" },
+        ],
+      },
+      {
+        number: "02",
+        title: "Customer Sentiment & Trust Signals",
+        stance:
+          "Three-year degradation in a structural pattern Hello82 has not fixed — and cannot fix without infrastructure they haven't built.",
+        findings: [
+          { label: "Trustpilot avg (kpop82.com)", value: "2.3 / 5", context: "86% 1-star across ~240 reviews" },
+          { label: "Reply rate on 1-stars", value: "<5%", context: "support function visibly under-resourced" },
+          { label: "Dominant complaint", value: "4–8 week shipping on in-stock inventory" },
+          { label: "EU market posture", value: "De-facto excluded", context: "$60 shipping, 8-week transit, no tracking" },
+          { label: "Trend 2022 → 2025", value: "3.1 → 2.2", context: "unresolved for three consecutive years" },
+        ],
+        quote: {
+          text: "Six weeks for a photocard from an LA warehouse to Chicago. USPS ground takes 3 days. They aren't shipping — they're hoarding.",
+          source: "Sherrice T., Trustpilot 2024",
+          url: "https://www.trustpilot.com/review/kpop82.com",
+        },
+      },
+      {
+        number: "03",
+        title: "WONDER Day-0 Tactical Plan",
+        stance:
+          "Twelve Alibaba-verified suppliers, YG Plus catalog economics, and a 15-artist roster ranked by Day-0 feasibility.",
+        findings: [
+          { label: "1688 supplier shortlist", value: "12 vendors", context: "photocards to apparel; 40–65% cost delta vs. H82" },
+          { label: "Initial inventory commit", value: "$600K – $900K", context: "covers the top 120 SKUs" },
+          { label: "Roster Day-0 locks", value: "TREASURE · BABYMONSTER · SEVENTEEN capsule" },
+          { label: "Week-5 expansion wave", value: "XIKERS · &TEAM · KATSEYE · ZEROBASEONE" },
+          { label: "90-day KPI gate", value: "$1M monthly GMV run rate", context: ">40% repeat, >4.5 Trustpilot, <24h support" },
+        ],
+      },
+      {
+        number: "04",
+        title: "Email & SMS Lifecycle Teardown",
+        stance:
+          "Hello82 operates a bare-minimum Klaviyo footprint; the opportunity is to build a K-pop-native flow architecture from Day 0.",
+        findings: [
+          { label: "Hello82 welcome flow", value: "1 email, generic 10% code", context: "no segmentation, no quiz, no SMS" },
+          { label: "Abandon-cart flow", value: "None detected", context: "72-hour test; pure category giveaway" },
+          { label: "Post-purchase series", value: "Confirmation only", context: "no review, restock, or UGC loop" },
+          { label: "WONDER welcome target", value: "55%+ open rate", context: "quiz-personalized 7-email series" },
+          { label: "WONDER email % of revenue", value: "35%+", context: "vs. 25–30% category benchmark" },
+        ],
+      },
+      {
+        number: "05",
+        title: "Partnership & Leadership Landscape",
+        stance:
+          "Public-record mapping where possible; honest about the gaps paid databases would close.",
+        findings: [
+          { label: "Confirmed artist relationships", value: "8 material partnerships", context: "JUNNY, XIKERS, ATEEZ, plus 5 licensed" },
+          { label: "Named leadership", value: "2 individuals", context: "Johnny Noh (CEO) · Sean Kim (content)" },
+          { label: "Venue / event footprint", value: "Crypto.com Arena · Rose Bowl · BMO Stadium", context: "KAMP LA history" },
+          { label: "Research gap", value: "Full org chart requires Sales Nav + Crunchbase Pro", context: "~$2.5K / 1 week to close" },
+        ],
+      },
+      {
+        number: "06",
+        title: "Integrated WONDER Launch Recommendations",
+        stance:
+          "Five Day-0 decisions that convert the research into a market-entry motion Hello82 cannot counter.",
+        findings: [
+          { label: "1. Service-Level Guarantee", value: "48h pack · 3-day US · 7-day EU", context: "auto-credit on misses; no Hello82 equivalent" },
+          { label: "2. YG Plus catalog for paid", value: "$500K over 90 days", context: "TREASURE + BABYMONSTER + BLACKPINK rights exclusive" },
+          { label: "3. Europe-first storefront", value: "UK/EU 3PL Day-0", context: "20–30% of global K-pop merch demand" },
+          { label: "4. Creator-first strategy", value: "100 creators, 50K–500K tier", context: "$300K guaranteed + 5–7% rev share" },
+          { label: "5. LA experience space", value: "2,000–3,000 sqft always-on", context: "24–36 small events/yr; CapEx $0.8–1.2M" },
+        ],
+      },
+    ],
+    dossierUrl: "/dossiers/hello82-strategic-dossier.docx",
+    dossierLabel: "Hello82 — Deep-Dive Strategic Dossier (Word, 30 pages)",
+  },
   accentColor: "#FD3737",
   auditTitle: "Competitive Takedown Audit",
   tagline:
