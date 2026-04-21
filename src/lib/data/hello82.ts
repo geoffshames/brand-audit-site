@@ -557,7 +557,7 @@ const auditData: AuditData = {
   deepDive: {
     headline: "Six research streams, one operational attack plan",
     subhead:
-      "After the base audit shipped, we layered six additional workstreams on top: financial reverse-engineering, a partnership landscape map, leadership mapping, three years of customer sentiment, a lifecycle teardown, and a tactical Day-0 plan for WONDER. The companion dossier consolidates every finding; highlights below.",
+      "Six workstreams stacked on top of the base audit: financial reverse-engineering, partnership landscape, leadership mapping, three years of customer sentiment, a lifecycle teardown, and a tactical Day-0 plan for WONDER. Note: an earlier version of this dossier incorrectly attributed KAMP LA ownership to Hello82 — KAMP LA is owned and operated by KAMP Global (Tim Kim) with Eventim Live Asia, not Hello82. Hello82's festival property is 82WORLD : LA, a first-year event launching October 17–18, 2026. All downstream claims have been corrected in this version (v1.1, April 2026).",
     streams: [
       {
         number: "01",
@@ -565,10 +565,10 @@ const auditData: AuditData = {
         stance:
           "Outside-in triangulation via traffic, K-pop-category conversion benchmarks, and partnership economics.",
         findings: [
-          { label: "Monthly GMV band", value: "$65K – $1.7M", context: "bear / base / KAMP-week spike" },
-          { label: "Annual GMV estimate", value: "$5 – $12M", context: "weighted across peak and trough months" },
-          { label: "Blended gross margin", value: "50 – 58%", context: "licensed merch drags; KAMP lifts" },
-          { label: "Enterprise-value target", value: "$18 – $40M", context: "low-end multiple given ops strain" },
+          { label: "Monthly GMV band", value: "$50K – $1.2M", context: "bear / base / 82WORLD-week spike (Oct 2026)" },
+          { label: "Annual GMV estimate", value: "$4 – $9M", context: "tightened downward after removing KAMP misattribution" },
+          { label: "Blended gross margin", value: "48 – 56%", context: "licensed merch drags; PLAY82 pop-ups lift" },
+          { label: "Enterprise-value target", value: "$14 – $32M", context: "low-end multiple given ops strain + festival risk" },
           { label: "WONDER margin headroom", value: "+14 – 18 pts", context: "from YG Plus + 1688 sourcing" },
         ],
       },
@@ -624,7 +624,7 @@ const auditData: AuditData = {
         findings: [
           { label: "Confirmed artist relationships", value: "8 material partnerships", context: "JUNNY, XIKERS, ATEEZ, plus 5 licensed" },
           { label: "Named leadership", value: "2 individuals", context: "Johnny Noh (CEO) · Sean Kim (content)" },
-          { label: "Venue / event footprint", value: "Crypto.com Arena · Rose Bowl · BMO Stadium", context: "KAMP LA history" },
+          { label: "Event footprint", value: "PLAY82 pop-ups · Fan Spaces (LA, NYC, ATL, Berlin) · 82WORLD : LA (Oct 17–18, 2026)", context: "first outdoor festival — brand-new, unproven" },
           { label: "Research gap", value: "Full org chart requires Sales Nav + Crunchbase Pro", context: "~$2.5K / 1 week to close" },
         ],
       },
